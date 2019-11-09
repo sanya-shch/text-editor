@@ -1,0 +1,18 @@
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "settings": {
+    "import/resolver": "webpack"
+  },
+  "rules": {
+    "indent": [ 2, "tab", {"SwitchCase": 1 } ],
+    "no-undef": "warn",
+    "no-underscore-dangle": "warn",
+    "no-tabs": "off",
+    "no-plusplus": "off",
+    "no-shadow": "off",
+    "object-curly-newline": "off",
+    "comma-dangle": ["warn", "never"],
+    "react/jsx-filename-extension": [1, {"extension": [".js", ",jsx"]}]
+  }
+}
