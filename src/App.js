@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { EditorState, Editor as DraftEditor } from 'draft-js';
+import {stateToHTML} from 'draft-js-export-html';
+import ReactHtmlParser from 'react-html-parser';
 import { EditorWrapper, EditorContainer } from './App.style';
 import Toolbar from './containers/toolbar';
 import { customStyleFn } from "./containers/toolbar/customStyles";
@@ -23,8 +25,14 @@ const App = () => {
                     customStyleFn={customStyleFn}
                 />
             </EditorContainer>
+            {stateToHTML(editorState.getCurrentContent())}
+            <div>{ ReactHtmlParser(stateToHTML(editorState.getCurrentContent())) }</div>
         </EditorWrapper>
     );
 };
 
 export default App;
+
+
+
+{/*<div dangerouslySetInnerHTML={{ __html: stateToHTML(editorState.getCurrentContent()) }} />*/}
