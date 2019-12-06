@@ -32,7 +32,3 @@ const App = () => {
 };
 
 export default App;
-
-
-
-{/*<div dangerouslySetInnerHTML={{ __html: stateToHTML(editorState.getCurrentContent()) }} />*/}

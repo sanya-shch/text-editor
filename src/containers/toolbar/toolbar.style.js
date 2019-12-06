@@ -25,19 +25,16 @@ export const ToolbarItem = styled.div`
   font-family: Oxygen, sans-serif;
   transition: all 250ms ease-in-out;
   cursor: pointer;
-  ${props =>
-    props.isActive &&
-    `    transform: translateY(1px);
+  border: 1px solid #34495e;
+  ${props => props.isActive && `  
     color: #34495e;
     background-color: transparent;
     box-shadow: none;
-    border: 1px solid #34495e;`}
+    `}
   &:hover {
-    transform: translateY(1px);
     color: #34495e;
     background-color: transparent;
     box-shadow: none;
-    border: 1px solid #34495e;
   }
 `;
 

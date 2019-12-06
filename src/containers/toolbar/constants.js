@@ -2,6 +2,25 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBold, faUnderline, faItalic } from "@fortawesome/free-solid-svg-icons";
 
+export const blockTypes = [
+    {
+        label: "H1",
+        style: "header-one"
+    },
+    {
+        label: "H2",
+        style: "header-two"
+    },
+    {
+        label: "H3",
+        type: "header-three"
+    },
+    {
+        label: "H4",
+        type: "header-four"
+    }
+];
+
 export const inlineStyles = [
     {
         label: "bold",
